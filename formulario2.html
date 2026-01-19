@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title> Formulario 2 </title>
+</head>
+<body>
+<h1> Formulario de registros </h1>
+<p> Digita los datos requeridos para el registro </p>
+<form id="Registro"/>
+<input type = "text" id="Nombre" placeholder ="Nombre" /><br>
+<input type = "text" id="Apellidos" placeholder ="Apellidos" /><br>
+<input type = "tel" id="Telefono" placeholder ="55-55-55-55" /><br>
+<label for = "Edad" id="Edad"> Edad:</label>
+<input type = "number" min="1" max="100" id="number" /><br>
+<p> Selecciona tu fecha de nacimiento</p>
+<input type = "date" id="date" /><br>
+<button onclick ="Registro();"> Registro </button>
+</form>
+
+<script>
+function Registro(){
+let Nombre = document.getElementById("Nombre").value;
+alert("tu nombre es" + Nombre);
+}
+</script>
+</body>
+
+</html>
